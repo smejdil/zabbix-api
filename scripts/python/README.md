@@ -1,38 +1,7 @@
-## zabbix-api
+## zabbix-api Python
 
-This small project for Zabbix API examples
 
-## Dependencies
-
-- Zabbix API Perl script has been tested on FreeBSD 
-- Package - Perl - p5-JSON-RPC - JSON::RPC::Legacy::Client
-
-- Zabbix API Python script has been tested on FreeBSD
-- Package - Python - zabbix-api and pyzabbix
-
-### Installation
-
-```console
-# Perl
-cd /usr/ports/devel/p5-JSON-RPC && make install clean
-man JSON::RPC::Legacy::Client
-
-# Python
-cd /usr/ports/devel/py-pip && make install clean
-pip install zabbix-api
-pip install pyzabbix
-
-pip list | grep zabbix
-pyzabbix               1.0.0               
-zabbix-api             0.5.4
-```
-
-## Examples
-
-```console
-./auth.pl
-Authentication successful. Auth ID: 8bf1e5e70bddb2bec567e267cc314dfd
-```
+### Examples
 
 ```console
 ./auth.py
@@ -51,6 +20,37 @@ Authentication successful. Auth ID: 8bf1e5e70bddb2bec567e267cc314dfd
 Connected to Zabbix API Version 5.0.17
 ```
 
-## To do
+```console
+./host_grp_get.py 
+1 Templates
+2 Linux servers
+4 Zabbix servers
+5 Discovered hosts
+6 Virtual machines
+7 Hypervisors
+```
 
-- other languages
+```console
+./hosts_get.py
+10084 Zabbix server
+10728 Zabbix A remote
+10729 Zabbix B remote
+10730 Zabbix C remote
+```
+
+```console
+./items_get.py
+...
+29200 CPU utilization system.cpu.util
+29165 CPU guest time system.cpu.util[,guest]
+29164 CPU guest nice time system.cpu.util[,guest_nice]
+29173 CPU idle time system.cpu.util[,idle]
+29167 CPU interrupt time system.cpu.util[,interrupt]
+29162 CPU iowait time system.cpu.util[,iowait]
+29169 CPU nice time system.cpu.util[,nice]
+29166 CPU softirq time system.cpu.util[,softirq]
+29168 CPU steal time system.cpu.util[,steal]
+29172 CPU system time system.cpu.util[,system]
+29171 CPU user time system.cpu.util[,user]
+...
+```
