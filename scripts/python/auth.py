@@ -1,6 +1,6 @@
 #!/usr/bin/env python3.8
 
-server="http://localhost"
+server="http://localhost/zabbix/"
 username="Admin"
 password="zabbix"
 
