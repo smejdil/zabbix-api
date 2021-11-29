@@ -9,4 +9,4 @@
 ### Python
 
 - [zabbix_api - 0.5.4](https://pypi.org/project/zabbix-api/)
-- [pyzabbix - 1.0.0(https://pypi.org/project/pyzabbix/)
+- [pyzabbix - 1.0.0](https://pypi.org/project/pyzabbix/)
