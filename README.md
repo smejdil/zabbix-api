@@ -19,8 +19,8 @@ man JSON::RPC::Legacy::Client
 
 # Python
 cd /usr/ports/devel/py-pip && make install clean
+cd /usr/ports/net-mgmt/py-pyzabbix && make install clean
 pip install zabbix-api
-pip install pyzabbix
 
 pip list | grep zabbix
 pyzabbix               1.0.0               
